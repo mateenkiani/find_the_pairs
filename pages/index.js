@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Header, CardsGrid } from "./components";
-import { ScoreCard } from "./components/ScoreCard";
+import { Header, CardsGrid } from "../components";
+import { ScoreCard } from "../components";
 
 const FlexBox = styled.div`
   display: flex;

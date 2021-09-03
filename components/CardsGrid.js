@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import Image from "next/image";
 import { useReducer } from "react";
 import styled from "styled-components";
-import { images } from "../../images";
+import { images } from "../images";
 
 const Card = styled.div`
   width: 7vw;
@@ -86,7 +86,7 @@ export const CardsGrid = () => {
       }, []);
 
   let unshuffledCards = createPairs(pairs);
-  console.log(unshuffledCards)
+  console.log(unshuffledCards);
   let ShuffledCards = shuffle(unshuffledCards);
 
   const [cards, dispatch] = useReducer(reducer, unshuffledCards);

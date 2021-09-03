@@ -1,8 +1,5 @@
-import { Row, Col, Button, Dropdown, Menu } from "antd";
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
-
-import Image from "next/image";
-import pair from "../../images/pair-10.jpg";
+import { Button, Dropdown, Menu } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
 const Column = styled.div`
@@ -61,10 +58,10 @@ export const ScoreCard = () => {
             </Button>
           </Dropdown>
         </div>
-        
+
         <div className={"tries"}>Score</div>
         <MyButton>Restart</MyButton>
       </Column>
     </Card>
   );
-};
+}
